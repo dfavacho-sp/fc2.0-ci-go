@@ -4,9 +4,9 @@ jobs:
   check-application:
     runs-on: ubuntu-latest
     steps:
-      -uses: actions/checkout@v2 #Clonar o repositório
-      -uses: actions/setup-go@v2 #Instalar o go
+      - uses: actions/checkout@v2 #Clonar o repositório
+      - uses: actions/setup-go@v2 #Instalar o go
         with:
           go-version: '1.16'      
-      -run: go test
-      -run: go run math.go
+      - run: go test
+      - run: go run math.go
