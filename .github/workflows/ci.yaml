@@ -1,19 +1,21 @@
 name: ci-golang-workflow #Qualquer nome
+
 on:  #on: [push] #Ação esperada
   pull_request:
     branches:
       - develop
+
 jobs:
   check-application:
     runs-on: ubuntu-latest
     strategy:
       matrix:
         go: ['1.14','1.15'] #Versões do Go
+
     steps:
       - uses: actions/checkout@v2 #Clonar o repositório
       - uses: actions/setup-go@v2 #Instalar o go
-        with:
-          #go-version: '1.16'
+        with:         
           go-version: ${{ matrix.go }} #Versões do Go      
       - run: go test
       - run: go run math.go

@@ -8,4 +8,5 @@ func TestSoma(t *testing.T) {
 	if total != 30 {
 		t.Errorf("Resultado da soma %d. está incorreto, Esperado: %d", total, 30)
 	}
+	
 }
