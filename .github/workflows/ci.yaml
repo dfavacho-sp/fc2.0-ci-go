@@ -1,5 +1,4 @@
 name: ci-golang-workflow #Qualquer nome
-
 on:  #on: [push] #Ação esperada
   pull_request:
     branches:
