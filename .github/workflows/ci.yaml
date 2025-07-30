@@ -36,7 +36,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: dfavacho-sp/fc2.0-ci-go:latest ##nome do repositorio do dockerhub + nome projeto  
+          tags: dayvisonfavacho/fc2.0-ci-go:latest ##nome do repositorio do dockerhub + nome projeto  
     
 
              
